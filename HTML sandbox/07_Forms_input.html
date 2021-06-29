@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms &inputs</title>
+</head>
+<body>
+   <form action="process.php">
+       <!--Text-->
+       <dive>
+           <label for="name">Name</label><br>
+           <input type="text" id="name"name="name">
+       </dive>
+       <!--email-->
+       <div>
+           <label for="email">Email</label><br>
+           <input type="email" name="email" id="email"placeholder="Enter an email">
+       </div>
+       <!--Textarea-->
+<div>
+    <label for="message">Message</label><br>
+    <textarea name="message" id="message"cols="50"rows="6" ></textarea>
+</div>
+<!--select-->
+<div>
+    <label for="sex">Sex</label>
+    <select name="sex" id="sex">
+        <option value="male">Male</option>
+        <option value="Female"selected>Female</option>
+        <option value="Other">Other</option>
+
+    </select>
+</div>
+<!--number-->
+<div>
+    <label for="age">Age</label><br>
+    <input type="number" name="age" id="age">
+</div>
+<!--date-->
+<div>
+    <label for="birthdate">Birthdate</label><br>
+    <input type="date" name="birthdate" id="birthdate">
+</div>
+<!--radio-->
+<div>
+    <label for="membership">membership</label>
+    <input type="radio" name="membership"value="simple" id="memebership">simple
+    <input type="radio" name="membership"value="standard" id="memebership">standard
+    <input type="radio" name="membership"value="super" id="memebership"checked>super
+</div>
+<!--checkbox-->
+<div>
+    <label for="membership">I like...</label>
+    <input type="checkbox" name="likes"value="bike" id="likes">bike
+    <input type="checkbox" name="likes"value="car" id="likes">car
+    <input type="checkbox" name="likes"value="boad" id="likes"checked>boat
+</div>
+<!--input submit-->
+<input type="submit" value="submit">
+<!--button submit-->
+<button type="reset">reset</button>
+  </form>
+    
+</body>
+</html>
